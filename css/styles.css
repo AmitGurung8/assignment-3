@@ -1,0 +1,141 @@
+/* Import the custom font */
+@font-face {
+    font-family: 'Turtles';
+    src: url('../fonts/Turtles.ttf') format('woff2');
+}
+
+/* Global styles */
+
+header {
+    background-color: #05a425; /* Ninja Turtle green for header */
+    padding: 10px; /* Padding around the header content */
+    text-align: center; /* Center-align header content */
+    font-family: 'Turtles', sans-serif; 
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set font family */
+    margin: 0;
+    padding: 0;
+    background-color: #c04848; /* Dark red background color */
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, label {
+    text-align: center; /* Center-align main heading */
+    color: #006600; /* Ninja Turtle green */
+    margin-bottom: 30px; /* Add space below heading */
+    font-family: 'Turtles', sans-serif; /* Use custom font for major titles */
+}
+
+.grand-title {
+    display: flex;
+    align-items: center;
+}
+
+.grand-title img {
+    margin-right: 20px;
+    border-radius: 50%; /* Rounded border for the ninja turtle image */
+}
+
+/* Form styles */
+form {
+    max-width: 500px; /* Limit form width */
+    margin: 20px auto; /* Center-align form */
+    padding: 30px; /* Add padding inside form */
+    background-color: #fff; /* White background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+input[type="text"],
+select {
+    width: 100%; /* Full width for text inputs and select dropdowns */
+    padding: 10px; /* Add padding inside inputs */
+    margin-bottom: 20px; /* Add space below inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+button {
+    width: 100%; /* Full width for button */
+    background-color: #006600; /* Ninja Turtle green */
+    color: #fff; /* White text color */
+    border: none; /* Remove button border */
+    box-shadow: 1px 1px 6px;
+    padding: 12px; /* Add padding inside button */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer;
+    border: 3px solid red; /* Set the border color to red by default */
+    border-radius: 15px; /* Increased border-radius */
+    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d00; /* Darker green on hover */
+    transform: scale(1.1); /* Slightly increased scale on hover */
+    border-color: rgb(248, 252, 10); /* Added red border on hover */
+}
+
+#pizza-info {
+    max-width: 500px; /* Limit width of pizza info display */
+    margin: 20px auto; /* Center-align display */
+    padding: 20px; /* Add padding inside display */
+    background-color: #f0f0f0; /* Light gray background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    font-family: 'Turtles', sans-serif; /* Use custom font for pizza info */
+}
+
+#pizza-info p {
+    margin: 0; /* Remove default margin for paragraphs inside pizza info */
+    color: #006600; /*green */
+}
+
+#countdown {
+    font-size: 24px; /* Set font size */
+    font-weight: bold; /* Set font weight to bold */
+    color: #fff; /* Text color */
+    background-color: #006600; /* Background color */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; /* Add margin from the top */
+    display: inline-block; /* Display as inline-block to adjust width */
+}
+
+footer {
+    background-color: #1ab620; 
+    color: #ffffff; /* White text color */
+    padding: 20px; /* Padding around the footer content */
+}
+
+
+footer h2 {
+    margin-bottom: 10px; 
+    font-family: 'Impact', sans-serif; /* Impact font for a bold look */
+}
+
+footer ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+footer li {
+    margin-bottom: 10px; /* Add space between list items */
+}
+
+footer li a {
+    color: #ffffff; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold text for links */
+}
+
+footer li a:hover {
+    text-decoration: underline; 
+}

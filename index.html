@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Maker</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Linking external CSS for styling -->
+</head>
+<body>
+    <header>
+        <h1>Ninja Turtle Pizzas</h1> <!-- Main heading for the pizza maker application -->
+        <img src="images/ninja.gif" alt="Ninja Turtle" width="200px" height="200px"> <!-- Ninja Turtle image -->
+    </header>
+
+    <main>
+        <p id="student-info"></p> <!-- Placeholder for displaying student information -->
+
+        <!-- Pizza Order Form -->
+        <form id="pizza-form">
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <label for="crust">Crust:</label>
+            <select id="crust" name="crust">
+                <option value="thin">Thin</option>
+                <option value="thick">Thick</option>
+            </select>
+
+            <fieldset>
+                <legend>Toppings:</legend>
+                <label><input type="checkbox" name="topping" value="pepperoni"> Pepperoni</label><br>
+                <label><input type="checkbox" name="topping" value="mushrooms"> Mushrooms</label><br>
+                <label><input type="checkbox" name="topping" value="onions"> Onions</label><br>
+                <label><input type="checkbox" name="topping" value="sausage"> Sausage</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sauces:</legend>
+                <label><input type="checkbox" name="sauce" value="tomato"> Tomato Sauce</label><br>
+                <label><input type="checkbox" name="sauce" value="bbq"> BBQ Sauce</label><br>
+                <label><input type="checkbox" name="sauce" value="ranch"> Ranch Sauce</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cheese:</legend>
+                <label><input type="checkbox" name="cheese" value="mozzarella"> Mozzarella</label><br>
+                <label><input type="checkbox" name="cheese" value="cheddar"> Cheddar</label><br>
+                <label><input type="checkbox" name="cheese" value="parmesan"> Parmesan</label><br>
+            </fieldset>
+
+            <label for="delivery">Delivery?</label>
+            <input type="checkbox" id="delivery" name="delivery"> <!-- Checkbox for delivery option -->
+
+            <button type="button" id="order-btn">Order</button> <!-- Button to submit the pizza order -->
+        </form>
+
+        <div id="pizza-info"></div> <!-- Placeholder for displaying the ordered pizza details -->
+        <div id="delivery-info"></div> <!-- Placeholder for displaying delivery information -->
+        <div id="countdown"></div> <!-- Placeholder for displaying countdown timer -->
+    </main>
+
+    <footer>
+        <p>@all rights reserved - Amit Gurung</p> <!-- Footer copyright information -->
+    </footer>
+
+    <script src="js/script.js" defer></script> <!-- Linking external JavaScript with defer attribute for optimized loading -->
+</body>
+</html>
